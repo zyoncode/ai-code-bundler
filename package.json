@@ -1,6 +1,6 @@
 {
   "name": "ai-code-bundler",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A tool to bundle code for AI learning",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,7 +19,12 @@
     "version": "changeset version",
     "release": "npm run build && changeset publish"
   },
-  "keywords": ["ai", "code", "bundler", "claude"],
+  "keywords": [
+    "ai",
+    "code",
+    "bundler",
+    "claude"
+  ],
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
