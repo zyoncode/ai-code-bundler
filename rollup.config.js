@@ -22,7 +22,7 @@ export default [
     input: 'src/cli.ts',
     output: {
       file: 'dist/cli.js',
-      format: 'esm',
+      format: 'cjs',
       sourcemap: true,
       banner: '#!/usr/bin/env node',
     },

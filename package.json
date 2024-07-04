@@ -1,38 +1,41 @@
 {
-    "name": "ai-code-bundler",
-    "version": "1.0.0",
-    "description": "A tool to bundle code for AI learning",
-    "main": "dist/index.js",
-    "type": "module",
-    "types": "dist/index.d.ts",
-    "bin": {
-      "acb": "dist/cli.js"
-    },
-    "scripts": {
-      "build": "rollup -c",
-      "start": "node dist/cli.js",
-      "prepublishOnly": "npm run build",
-      "changeset": "changeset",
-      "version": "changeset version",
-      "release": "npm run build && changeset publish"
-    },
-    "keywords": ["ai", "code", "bundler", "claude"],
-    "author": "Your Name",
-    "license": "MIT",
-    "devDependencies": {
-      "@changesets/cli": "^2.27.1",
-      "@rollup/plugin-commonjs": "^25.0.7",
-      "@rollup/plugin-node-resolve": "^15.2.3",
-      "@rollup/plugin-replace": "^5.0.5",
-      "@rollup/plugin-typescript": "^11.1.6",
-      "@types/node": "^20.11.24",
-      "@types/yargs": "^17.0.32",
-      "rollup": "^4.12.0",
-      "tslib": "^2.6.2",
-      "typescript": "^5.3.3"
-    },
-    "dependencies": {
-      "ignore": "^5.3.1",
-      "yargs": "^17.7.2"
-    }
+  "name": "ai-code-bundler",
+  "version": "1.0.0",
+  "description": "A tool to bundle code for AI learning",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "aicb": "dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./cli": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "npm run build && changeset publish"
+  },
+  "keywords": ["ai", "code", "bundler", "claude"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.11.24",
+    "@types/yargs": "^17.0.32",
+    "rollup": "^4.12.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "ignore": "^5.3.1",
+    "yargs": "^17.7.2"
   }
+}

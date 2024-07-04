@@ -1,8 +1,7 @@
-#!/usr/bin/env node
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
-import * as path from 'path';
-import { bundleCode } from './index.js';
+import path from 'path';
+import { bundleCode } from './index';
 
 yargs(hideBin(process.argv))
   .command('$0 [path]', 'Bundle code for AI learning', (yargs) => {
