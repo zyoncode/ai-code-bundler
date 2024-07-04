@@ -1,4 +1,4 @@
-# AI Code Bundler (acb)
+# AI Code Bundler (aicb)
 
 AI Code Bundler is a tool designed to bundle your code into a format suitable for AI learning, specifically for AI models that support file uploads like Claude.
 
@@ -18,10 +18,17 @@ npx ai-code-bundler
 
 ## Usage
 
-The basic command is `acb`:
+You can use AI Code Bundler without installation using `npx`:
 
 ```bash
-acb [path] [options]
+npx ai-code-bundler [options]
+```
+
+Or, if you prefer, you can install it globally:
+
+```bash
+npm install -g ai-code-bundler
+aicb [options]
 ```
 
 If no path is specified, it will use the current directory.
@@ -39,13 +46,13 @@ If no path is specified, it will use the current directory.
 Bundle the current directory:
 
 ```bash
-acb
+aicb
 ```
 
 Bundle a specific directory with custom options:
 
 ```bash
-acb /path/to/your/code -o bundled -e .js .ts -m 3 -s 20 -i
+aicb /path/to/your/code -o bundled -e .js .ts -m 3 -s 20 -i
 ```
 
 This will bundle the code in `/path/to/your/code`, output to a 'bundled' directory, only include .js and .ts files, create a maximum of 3 files, each with a maximum size of 20MB, and ignore .gitignore rules.
