@@ -19,6 +19,9 @@
     "version": "changeset version",
     "release": "npm run build && changeset publish"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "ai",
     "code",
